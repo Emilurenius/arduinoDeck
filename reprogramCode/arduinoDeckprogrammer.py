@@ -30,7 +30,8 @@ while True:
     time.sleep(0.2)
     print(buttonVal)
     ser.write(buttonVal)
-    time.sleep(1);
+    while not ser.in_waiting:
+        time.sleep(0.5);
     while ser.in_waiting:
         print(ser.readline());
     ser.close()
