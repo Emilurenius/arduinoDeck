@@ -113,11 +113,11 @@ void b13() {
 }
 
 void b14() {
-  Keyboard.write(KEY_CAPS_LOCK);
+
 }
 
 void b15() {
-  Keyboard.write(KEY_DELETE);
+
 }
 
 void setup() {
