@@ -1,6 +1,7 @@
 #define KEY_RIGHT_SHIFT 0x85
 #define KEY_RIGHT_ALT   0x86
 #define KEY_RIGHT_GUI   0x87
+#define KEY_LEFT_GUI    0x83
 #define KEY_UP_ARROW    0xDA
 #define KEY_DOWN_ARROW  0xD9
 #define KEY_LEFT_ARROW  0xD8
@@ -65,7 +66,7 @@ void b1() {
 }
 
 void b2() {
-  //Keyboard.write(KEY_F14);
+  //Keyboard.write(KEY_LEFT_GUI);
 }
 
 void b3() {

@@ -1,6 +1,7 @@
 #define KEY_RIGHT_SHIFT 0x85
 #define KEY_RIGHT_ALT   0x86
 #define KEY_RIGHT_GUI   0x87
+#define KEY_LEFT_GUI    0x83
 #define KEY_UP_ARROW    0xDA
 #define KEY_DOWN_ARROW  0xD9
 #define KEY_LEFT_ARROW  0xD8
@@ -91,10 +92,16 @@ void b5() {
   Keyboard.write('k');
   Keyboard.write('j');
   Keyboard.release(KEY_LEFT_CTRL);
+
 }
 
 void b6() {
-  Keyboard.write(KEY_F18);
+  Keyboard.press(KEY_LEFT_GUI);
+
+  Keyboard.press('r');
+  Keyboard.releaseAll();
+  delay(50);
+  Keyboard.println("code");
 }
 
 void b7() {
