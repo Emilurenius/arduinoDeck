@@ -55,44 +55,10 @@ char hexaKeys[ROWS][COLS] = {
   {0x0B, 0x0C, 0x0D, 0x0E, 0x0F}
 };
 
-//char keys[15][64] = {
-//  {KEY_F13},
-//  "Hello world",
-//  {KEY_F15},
-//  {KEY_F16},
-//  {KEY_F17},
-//  {KEY_F18},
-//  {KEY_F19},
-//  {KEY_F20},
-//  {KEY_F21},
-//  {KEY_F22},
-//  {KEY_F23},
-//  {KEY_F24},
-//  {KEY_F25},
-//  {KEY_DELETE},
-//  {KEY_CAPS_LOCK},
-//  }; // Characters
-//char Delay[15][255] // delay
-//unsigned long delays[5] = {150, 25000, 10, 1, 500}
-
 byte rowPins[ROWS] = {16,15,14};
 byte colPins[COLS] = {4,5,6,7,8};
 
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
-
-//void programMode() {
-//  int i = 0;
-//  int selectedKey = Serial.read();
-
-//  memset(keys[selectedKey-1], 0, sizeof keys[selectedKey-1]);
-  
-//  while (Serial.available()) {
-//    int data = Serial.read();
-//    Serial.print(data);
-//    keys[selectedKey-1][i] = data;
-//    i++;
-//  }
-//}
 
 void b1() {
   Keyboard.write('u');

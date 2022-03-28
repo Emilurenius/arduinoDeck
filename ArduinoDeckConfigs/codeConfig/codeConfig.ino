@@ -60,12 +60,19 @@ byte colPins[COLS] = {4,5,6,7,8};
 
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
 
+#pragma region Button functions
 void b1() {
-  Keyboard.write(KEY_F13);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('k');
+  Keyboard.write('c');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
 void b2() {
-  Keyboard.write(KEY_F14);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('k');
+  Keyboard.write('u');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
 void b3() {
@@ -73,11 +80,17 @@ void b3() {
 }
 
 void b4() {
-  Keyboard.write(KEY_F16);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('k');
+  Keyboard.write('0');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
 void b5() {
-  Keyboard.write(KEY_F17);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('k');
+  Keyboard.write('j');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
 void b6() {
@@ -109,16 +122,23 @@ void b12() {
 }
 
 void b13() {
-  Keyboard.write(KEY_F25);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('a');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
 void b14() {
-  Keyboard.write(KEY_CAPS_LOCK);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('c');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
 
 void b15() {
-  Keyboard.write(KEY_DELETE);
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('v');
+  Keyboard.release(KEY_LEFT_CTRL);
 }
+#pragma endregion Button functions
 
 void setup() {
   Serial.begin(9600);
