@@ -68,7 +68,7 @@ void b1() {
 }
 
 void b2() {
-  Keyboard.write(KEY_F14);
+  Keyboard.print("Hello wøæårld/");
 }
 
 void b3() {
