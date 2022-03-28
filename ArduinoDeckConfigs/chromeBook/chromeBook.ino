@@ -1,6 +1,7 @@
 #define KEY_RIGHT_SHIFT 0x85
 #define KEY_RIGHT_ALT   0x86
 #define KEY_RIGHT_GUI   0x87
+#define KEY_LEFT_GUI    0x84
 #define KEY_UP_ARROW    0xDA
 #define KEY_DOWN_ARROW  0xD9
 #define KEY_LEFT_ARROW  0xD8
@@ -61,7 +62,9 @@ byte colPins[COLS] = {4,5,6,7,8};
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
 
 void b1() {
-  Keyboard.write(KEY_F13);
+  Keyboard.write(KEY_LEFT_GUI);
+  delay(200);
+  Keyboard.println("code");
 }
 
 void b2() {
