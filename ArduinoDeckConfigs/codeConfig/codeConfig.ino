@@ -105,7 +105,7 @@ void b6() {
 }
 
 void b7() {
-  Keyboard.write(KEY_F19);
+  Keyboard.print("æøå/:");
 }
 
 void b8() {
