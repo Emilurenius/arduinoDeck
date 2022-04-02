@@ -68,51 +68,51 @@ void b1() {
 }
 
 void b2() {
-  Keyboard.print("Hello wøæårld/");
+  //Keyboard.print("Hello wøæårld/");
 }
 
 void b3() {
-  Keyboard.write(KEY_F15);
+  //Keyboard.write(KEY_F15);
 }
 
 void b4() {
-  Keyboard.write(KEY_F16);
+  //Keyboard.write(KEY_F16);
 }
 
 void b5() {
-  Keyboard.write(KEY_F17);
+  //Keyboard.write(KEY_F17);
 }
 
 void b6() {
-  Keyboard.write(KEY_F18);
+  //Keyboard.write(KEY_F18);
 }
 
 void b7() {
-  Keyboard.write(KEY_F19);
+  //Keyboard.write(KEY_F19);
 }
 
 void b8() {
-  Keyboard.write(KEY_F20);
+  //Keyboard.write(KEY_F20);
 }
 
 void b9() {
-  Keyboard.write(KEY_F21);
+  //Keyboard.write(KEY_F21);
 }
 
 void b10() {
-  Keyboard.write(KEY_F22);
+  //Keyboard.write(KEY_F22);
 }
 
 void b11() {
-  Keyboard.write(KEY_F23);
+  //Keyboard.write(KEY_F23);
 }
 
 void b12() {
-  Keyboard.write(KEY_F24);
+  //Keyboard.write(KEY_F24);
 }
 
 void b13() {
-  Keyboard.write(KEY_F25);
+  //Keyboard.write(KEY_F25);
 }
 
 void b14() {
