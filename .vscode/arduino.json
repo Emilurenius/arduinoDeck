@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:leonardo",
     "programmer": "arduino:avrispmkii",
-    "port": "COM7",
+    "port": "/dev/ttyACM1",
     "sketch": "ArduinoDeckConfigs\\codeConfig\\codeConfig.ino"
 }
