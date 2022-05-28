@@ -20,15 +20,15 @@ byte colPins[COLS] = {4,5,6,7,8};
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
 
 void b1() {
-  Keyboard.write(MEDIA_PLAY_PAUSE);
+  Keyboard.write('f');
 }
 
 void b2() {
-  Keyboard.write(KEY_VOLUME_UP);
+  Keyboard.write('r');
 }
 
 void b3() {
-  Keyboard.write('A');
+  Keyboard.write(KEY_F15)
 }
 
 void b4() {
@@ -44,7 +44,7 @@ void b6() {
 }
 
 void b7() {
-  Keyboard.write(KEY_VOLUME_DOWN);
+  Keyboard.write(KEY_F19);
 }
 
 void b8() {

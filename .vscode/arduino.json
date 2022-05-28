@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:leonardo",
     "programmer": "arduino:avrispmkii",
-    "port": "/dev/ttyACM1",
-    "sketch": "ArduinoDeckConfigs\\codeConfig\\codeConfig.ino"
+    "port": "COM5",
+    "sketch": "ArduinoDeckConfigs\\snowRunner\\snowRunner.ino"
 }
